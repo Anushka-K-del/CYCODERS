@@ -1,76 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Campus Pulse</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <h1>Campus Pulse</h1>
-    <p>Know how crowded your campus is right now 🌍</p>
-    <div class="location-card">
-        <h2>📚Library</h2>
-        <p>Current Crowd</p>
-        <h3>35%</h3>
-        <p>🟢Low Crowd</p>
-    </div>
-    <div class="location-card">
-        <h2>🍔Food Court</h2>
-        <p>Current Crowd</p>
-        <h3>85%</h3>
-        <p>🔴very-Crowded</p>
-    </div>
-    <div class="location-card">
-        <h2>🖥️CSE Lab</h2>
-        <p>Current Crowd</p>
-        <h3>55%</h3>
-        <p>🟡 Moderate</p>
-    </div>
-    <div class="location-card">
-        <h2>🛍️Panda Store</h2>
-        <p>Current Crowd</p>
-        <h3>65%</h3>
-        <p>🟠crowded</p>
-    </div>
-    <div class="locations-container">
-        <div class="location-card">
-            ...
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="logo">
+            💓 Campus Pulse
         </div>
-         <div class="location-card">
-            ...
+
+        <p>
+            Adamas University
+        </p>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <h1>
+                Live Campus Crowd Updates
+            </h1>
+
+            <p>
+                Know how crowded your campus is right now.
+            </p>
+
+        </section>
+
+
+        <!-- LOCATION CARDS -->
+
+        <div class="locations-container">
+
+            <div class="location-card">
+
+                <h2>📚 Library</h2>
+
+                <p>Current Crowd</p>
+
+                <h3>35%</h3>
+
+                <p>🟢 Low Crowd</p>
+
+            </div>
+
+
+            <div class="location-card">
+
+                <h2>🍔 Food Court</h2>
+
+                <p>Current Crowd</p>
+
+                <h3>85%</h3>
+
+                <p>🔴 Very Crowded</p>
+
+            </div>
+
+
+            <div class="location-card">
+
+                <h2>🖥️ CSE Lab</h2>
+
+                <p>Current Crowd</p>
+
+                <h3>55%</h3>
+
+                <p>🟡 Moderate</p>
+
+            </div>
+
+
+            <div class="location-card">
+
+                <h2>🛍️ Panda Store</h2>
+
+                <p>Current Crowd</p>
+
+                <h3>65%</h3>
+
+                <p>🟠 Crowded</p>
+
+            </div>
+
         </div>
-         <div class="location-card">
-            ...
-        </div>
-         <div class="location-card">
-            ...
-        </div>
+
+
+        <!-- REPORT CROWD -->
+
         <div class="report-section">
-            <h2>📍Report Crowd</h2>
+
+            <h2>
+                📍 Report Crowd
+            </h2>
+
             <p>
                 Tell us how crowded your current location is.
             </p>
-            <label for="location">Choose your location:</label>
+
+
+            <label for="location">
+                Choose your location:
+            </label>
+
             <select id="location">
-                <option value="">Select a location</option>
-                 <option value="food-court">🍔Food Court</option>
-                 <option value="Library">📚Library</option>
-                 <option value="cse-lab">🖥️CSE Lab</option>
-                 <option value="panda-store">🛍️Panda Store</option>
+
+                <option value="">
+                    Select a location
+                </option>
+
+                <option value="food-court">
+                    🍔 Food Court
+                </option>
+
+                <option value="library">
+                    📚 Library
+                </option>
+
+                <option value="cse-lab">
+                    🖥️ CSE Lab
+                </option>
+
+                <option value="panda-store">
+                    🛍️ Panda Store
+                </option>
+
             </select>
-            <label for="crowd-level">Select crowd level:</label>
+
+
+            <label for="crowd-level">
+                Select crowd level:
+            </label>
+
             <select id="crowd-level">
-                <option value="">Select crowd level</option>
-                 <option value="low">🟢low</option>
-                 <option value="moderate">🟡moderate</option>
-                 <option value="crowded">🟠crowded</option>
-                 <option value="very-crowded">🔴very-crowded</option>
+
+                <option value="">
+                    Select crowd level
+                </option>
+
+                <option value="low">
+                    🟢 Low
+                </option>
+
+                <option value="moderate">
+                    🟡 Moderate
+                </option>
+
+                <option value="crowded">
+                    🟠 Crowded
+                </option>
+
+                <option value="very-crowded">
+                    🔴 Very Crowded
+                </option>
+
             </select>
+
+
+            <button id="submit-report">
+                Submit Report
+            </button>
 
         </div>
 
-    </div>
-    
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <p>
+            Built with ❤️ for Adamas University
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
